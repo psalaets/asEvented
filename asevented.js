@@ -6,7 +6,7 @@
  *
  **/
 (function (name, global, definition) {
-  if (typeof module !== 'undefined') {
+  if (typeof module !== 'undefined' && module.exports) {
     module.exports = definition();
   } else if (typeof require !== 'undefined' && typeof define.amd === 'object') {
     define(definition);
